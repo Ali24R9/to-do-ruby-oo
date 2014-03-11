@@ -16,4 +16,13 @@ class List
     @tasks
   end
 
+  def priority_sort
+    @tasks.sort_by {|obj| obj.priority}.reverse
+  end
+
+  def due_date_sort
+   @tasks.sort_by {|obj| obj.due_date}
+  end
+
+
 end
